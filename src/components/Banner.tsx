@@ -1,4 +1,4 @@
-import bannerImage from "../assets/bannerImage.jpg"
+import bannerImage from "../assets/bannerImage.webp"
 import { FaWhatsapp, FaInstagram } from "react-icons/fa"
 
 const Banner = () => {
