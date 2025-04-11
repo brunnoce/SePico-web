@@ -46,17 +46,17 @@ const NavBar = () => {
 
       <div className="flex flex-wrap justify-center sm:justify-end gap-2 sm:gap-4">
         <Link to="/">
-          <button className="px-4 py-2 text-sm border border-white rounded-md text-white hover:bg-[#ffaa11] hover:text-black transition active:bg-[#ffaa11] active:text-black transition">
+          <button className="cursor-pointer px-4 py-2 text-sm border border-white rounded-md text-white hover:bg-[#ffaa11] hover:text-black transition active:bg-[#ffaa11] active:text-black transition">
             Inicio
           </button>
         </Link>
         <Link to="/about">
-          <button className="px-4 py-2 text-sm border border-white rounded-md text-white hover:bg-[#ffaa11] hover:text-black transition active:bg-[#ffaa11] active:text-black transition">
+          <button className="cursor-pointer px-4 py-2 text-sm border border-white rounded-md text-white hover:bg-[#ffaa11] hover:text-black transition active:bg-[#ffaa11] active:text-black transition">
             Nosotros
           </button>
         </Link>
         <Link to="/contact">
-          <button className="px-4 py-2 text-sm border border-white rounded-md text-white hover:bg-[#ffaa11] hover:text-black transition active:bg-[#ffaa11] active:text-black transition">
+          <button className="cursor-pointer px-4 py-2 text-sm border border-white rounded-md text-white hover:bg-[#ffaa11] hover:text-black transition active:bg-[#ffaa11] active:text-black transition">
             Contacto
           </button>
         </Link>
