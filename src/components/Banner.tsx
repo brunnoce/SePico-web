@@ -4,7 +4,7 @@ import { FaWhatsapp, FaInstagram } from "react-icons/fa"
 const Banner = () => {
   return (
     <div
-      className="w-full h-[calc(100vh-64px)] bg-cover bg-center flex items-center justify-center relative"
+      className="w-full h-screen h-[calc(100vh-64px)] bg-cover bg-center flex items-center justify-center relative"
       style={{ backgroundImage: `url(${bannerImage})` }}
     >
       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
