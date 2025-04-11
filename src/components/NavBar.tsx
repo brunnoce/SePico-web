@@ -1,18 +1,47 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/icon.png";
 
 const NavBar = () => {
+  const [showNavbar, setShowNavbar] = useState(true);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+
+      if (currentScroll < 50 || currentScroll < lastScrollY) {
+        setShowNavbar(true);
+      } else {
+        setShowNavbar(false);
+      }
+
+      lastScrollY = currentScroll;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="bg-[#c91c1c] text-white shadow-md px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0">
+    <header
+      className={`fixed top-0 left-0 w-full z-50 bg-[#c91c1c] text-white shadow-md px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0 transition-transform duration-300 ${
+        showNavbar ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="flex items-center gap-3">
         <Link to="/">
           <div className="bg-black rounded-full p-1">
             <img src={logo} alt="Logo" className="h-10 w-10 object-contain" />
           </div>
         </Link>
-        <span className="text-sm sm:text-base font-medium tracking-wide text-center sm:text-left">
-          Se Picó - Quesos y fiambres
-        </span>
+        <Link to="/">
+          <span className="text-sm sm:text-base font-medium tracking-wide text-center sm:text-left">
+            Se Picó - Quesos y fiambres
+          </span>
+        </Link>
       </div>
 
       <div className="flex flex-wrap justify-center sm:justify-end gap-2 sm:gap-4">
