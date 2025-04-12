@@ -1,9 +1,9 @@
 // src/data/products.ts
-import prod1 from "../assets/prods/prod1.png";
-import prod2 from "../assets/prods/prod2.png";
-import prod3 from "../assets/prods/prod3.png";
-import prod4 from "../assets/prods/prod4.png";
-import prod5 from "../assets/prods/prod5.png";
+import prod1 from "../assets/prods/prod1.webp";
+import prod2 from "../assets/prods/prod2.webp";
+import prod3 from "../assets/prods/prod3.webp";
+import prod4 from "../assets/prods/prod4.webp";
+import prod5 from "../assets/prods/prod5.webp";
 
 export interface IProduct {
   id: number;

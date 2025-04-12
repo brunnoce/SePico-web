@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/icon.png";
+import logo from "../assets/icon.webp";
 
 const NavBar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
