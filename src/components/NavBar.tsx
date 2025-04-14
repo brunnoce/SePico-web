@@ -46,17 +46,17 @@ const NavBar = () => {
 
       <div className="flex flex-wrap justify-center sm:justify-end gap-2 sm:gap-4">
         <Link to="/">
-          <button className="cursor-pointer px-4 py-2 text-sm border border-white rounded-md text-white hover:bg-[#ffaa11] hover:text-black transition active:bg-[#ffaa11] active:text-black transition">
+          <button className="cursor-pointer px-4 py-2 text-sm border border-white rounded-md text-white hover:bg-[#ffaa11] hover:text-black hover:border-black transition active:bg-[#ffaa11] active:text-black active:border-black transition">
             Inicio
           </button>
         </Link>
         <Link to="/about">
-          <button className="cursor-pointer px-4 py-2 text-sm border border-white rounded-md text-white hover:bg-[#ffaa11] hover:text-black transition active:bg-[#ffaa11] active:text-black transition">
+          <button className="cursor-pointer px-4 py-2 text-sm border border-white rounded-md text-white hover:bg-[#ffaa11] hover:text-black hover:border-black transition active:bg-[#ffaa11] active:text-black active:border-black transition">
             Nosotros
           </button>
         </Link>
         <Link to="/contact">
-          <button className="cursor-pointer px-4 py-2 text-sm border border-white rounded-md text-white hover:bg-[#ffaa11] hover:text-black transition active:bg-[#ffaa11] active:text-black transition">
+          <button className="cursor-pointer px-4 py-2 text-sm border border-white rounded-md text-white hover:bg-[#ffaa11] hover:text-black hover:border-black transition active:bg-[#ffaa11] active:text-black active:border-black transition">
             Contacto
           </button>
         </Link>
