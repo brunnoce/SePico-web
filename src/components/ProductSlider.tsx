@@ -62,7 +62,7 @@ const ProductSlider = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 relative">
-      <h2 className="text-3xl font-bold text-center mb-8">Nuestros Productos</h2>
+      <h2 className="text-3xl font-bold text-center mb-8">PRODUCTOS</h2>
       <Slider {...settings}>
         {products.map((product) => (
           <div key={product.id} className="px-2">
@@ -74,4 +74,4 @@ const ProductSlider = () => {
   );
 };
 
-export default ProductSlider;
+export default ProductSlider
