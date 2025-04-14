@@ -1,6 +1,6 @@
-import { IProduct } from "../data/products";
+import { Product } from "../data/products";
 
-const ProductCard = ({ product }: { product: IProduct }) => {
+const ProductCard = ({ product }: { product: Product }) => {
   return (
     <div className="bg-white rounded-xl shadow-md p-4 flex flex-col items-center text-center">
       <img
@@ -14,4 +14,4 @@ const ProductCard = ({ product }: { product: IProduct }) => {
   );
 };
 
-export default ProductCard;
+export default ProductCard

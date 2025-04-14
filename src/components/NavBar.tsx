@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/icon.webp";
+import {icon} from "../assets";
 
 const NavBar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -33,8 +33,8 @@ const NavBar = () => {
     >
       <div className="flex items-center gap-3">
         <Link to="/">
-          <div className="bg-black rounded-full p-1">
-            <img src={logo} alt="Logo" className="h-10 w-10 object-contain" />
+          <div className="bg-white rounded-full p-1">
+            <img src={icon} alt="Logo" className="h-10 w-10 object-contain" />
           </div>
         </Link>
         <Link to="/">
@@ -65,4 +65,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBar

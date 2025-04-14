@@ -1,18 +1,13 @@
-// src/data/products.ts
-import prod1 from "../assets/prods/prod1.webp";
-import prod2 from "../assets/prods/prod2.webp";
-import prod3 from "../assets/prods/prod3.webp";
-import prod4 from "../assets/prods/prod4.webp";
-import prod5 from "../assets/prods/prod5.webp";
+import {prod1, prod2, prod3, prod4, prod5} from "../assets/index"
 
-export interface IProduct {
+export interface Product {
   id: number;
   title: string;
   description: string;
   image: string;
 }
 
-export const products: IProduct[] = [
+export const products: Product[] = [
   {
     id: 1,
     title: "Picada Grande",
