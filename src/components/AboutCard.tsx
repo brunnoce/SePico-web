@@ -16,6 +16,7 @@ const AboutCard = ({ title, description, image, reverse = false }: AboutCardProp
           <img
             src={image}
             alt={title}
+            loading="lazy"
             className="w-full max-h-80 rounded-xl shadow-lg object-contain"
           />
         </div>

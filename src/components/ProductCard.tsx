@@ -6,6 +6,7 @@ const ProductCard = ({ product }: { product: Product }) => {
       <img
         src={product.image}
         alt={product.title}
+        loading="lazy"
         className="w-full h-48 object-contain rounded-md mb-4"
       />
       <h3 className="text-xl font-semibold">{product.title}</h3>
